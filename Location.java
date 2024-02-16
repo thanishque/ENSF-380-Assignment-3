@@ -1,5 +1,7 @@
 package edu.ucalgary.oop;
 
+import DisasterVictim.java;
+import Supply.java;
 import java.util.ArrayList;
 
 public class Location {
@@ -8,7 +10,7 @@ public class Location {
     private ArrayList<DisasterVictim> occupants;
     private ArrayList<Supply> supplies;
 
-    // Constructor
+ 
     public Location(String name, String address) {
         this.name = name;
         this.address = address;
@@ -16,7 +18,7 @@ public class Location {
         this.supplies = new ArrayList<>();
     }
 
-    // Getter and Setter methods for name
+   
     public String getName() {
         return name;
     }
@@ -25,7 +27,7 @@ public class Location {
         this.name = name;
     }
 
-    // Getter and Setter methods for address
+   
     public String getAddress() {
         return address;
     }
@@ -34,7 +36,7 @@ public class Location {
         this.address = address;
     }
 
-    // Getter and Setter methods for occupants
+  
     public ArrayList<DisasterVictim> getOccupants() {
         return occupants;
     }
@@ -43,7 +45,6 @@ public class Location {
         this.occupants = occupants;
     }
 
-    // Getter and Setter methods for supplies
     public ArrayList<Supply> getSupplies() {
         return supplies;
     }
@@ -52,22 +53,22 @@ public class Location {
         this.supplies = supplies;
     }
 
-    // Method to add an occupant
+   
     public void addOccupant(DisasterVictim occupant) {
         occupants.add(occupant);
     }
 
-    // Method to remove an occupant
+   
     public void removeOccupant(DisasterVictim occupant) {
         occupants.remove(occupant);
     }
 
-    // Method to add a supply
+   
     public void addSupply(Supply supply) {
         supplies.add(supply);
     }
 
-    // Method to remove a supply
+    
     public void removeSupply(Supply supply) {
         supplies.remove(supply);
     }
